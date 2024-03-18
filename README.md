@@ -1,6 +1,6 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/viventriglia/vesuvius-sentinel/HEAD?labpath=remote_sensing%2Fremote_sensing_vesuvius.ipynb)
 
-# Remote Sensing with Python
+# Remote Sensing of Vesuvius wildfires
 
 Satellites are circling our planet, allowing us to "sense" things about the Earth. It is the Art and Science of making measurements using sensors.
 
@@ -18,7 +18,32 @@ We aim to:
 - harness the **Google Earth Engine**'s Python API to work with **Sentinel-2** imagery;
 - perform a basic analysis of Normalized Difference Vegetation Index (**NDVI**) to assess vegetation health and changes over time.
 
-## How can I run it?
+## How bad is the situation?
+
+The image below is the result from the analysis of satellite data from a few weeks before and after the wildfires, as well as about 6 years later.
+
+| ![RGB composite and NDVI](images/rgb_ndvi.png) | 
+|:--:| 
+| *RGB composite and NDVI pre- and post-wildfires* |
+
+In the top row is the **RGB composite**, while in the bottom row is the Normalized Difference Vegetation Index (**NDVI**).
+
+The latter is defined as
+
+$$\rm{NDVI \equiv \frac{NIR - RED}{NIR + RED}}$$
+
+and it measures greenness and density of the vegetation captured in a satellite image, allowing the immediate recognition of areas that have problems.
+
+| ![NDVI explained](images/ndvi_exp.png) | 
+|:--:| 
+| *Vegetation index explained* |
+
+The color palette identifies areas with healthy vegetation in **green**, while areas with gradually more damaged vegetation are identified in **yellow** and **red**.
+
+The evolution of NDVI shows the tremendous damage caused by fires at Vesuvius National Park.
+However, 6 years after its devastation the vegetation appears to be on track for healing.
+
+## How can I run the code myself?
 
 - First, in order to execute the code, you need a Google Earth Engine account, which can be obtained [here](https://earthengine.google.com/)
 
